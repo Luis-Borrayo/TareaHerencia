@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TareaHerencia.ClasesLibro
 {
-    internal class Prestamo
+    internal class Prestamo : Libros
     {
         public readonly DateTime FechaPrestamo;
         public readonly DateTime FechaDevolucion;

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TareaHerencia.ClasesLibro
 {
-    internal class Miembro : Libros
+    internal class Miembro : Prestamo
     {
         public string Nombre { get; set; }
         public int NoDeMiembro { get; set; }
@@ -26,7 +26,7 @@ namespace TareaHerencia.ClasesLibro
                 Console.WriteLine($"Historial de prestamos de {Nombre}:");
                 foreach (var prestamo in HistoriaPrestamo)
                 {
-                    prestamo.MostrarInformacion();
+                    Console.WriteLine($"El Titulo es: {Nombre}, El codigo es: {CodigoLiblro}, Fecha Entrega: {FechaDeEntrega}, Fecha de Salida: {FechaDeSalida}");
                 }
             }
         }
