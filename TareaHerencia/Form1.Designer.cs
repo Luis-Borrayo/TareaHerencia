@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            ClaseMiembros = new Button();
+            listBox1 = new ListBox();
+            SuspendLayout();
+            // 
+            // ClaseMiembros
+            // 
+            ClaseMiembros.Location = new Point(44, 43);
+            ClaseMiembros.Name = "ClaseMiembros";
+            ClaseMiembros.Size = new Size(114, 31);
+            ClaseMiembros.TabIndex = 0;
+            ClaseMiembros.Text = "ClaseMiembros";
+            ClaseMiembros.UseVisualStyleBackColor = true;
+            ClaseMiembros.Click += ClaseMiembros_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(401, 43);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(387, 304);
+            listBox1.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
+            Controls.Add(ClaseMiembros);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button ClaseMiembros;
+        private ListBox listBox1;
     }
 }
