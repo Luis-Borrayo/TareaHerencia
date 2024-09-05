@@ -8,26 +8,27 @@ using System.Threading.Tasks;
 
 namespace TareaHerencia.ClasesLibro
 {
-    internal class Miembro
+    internal class Miembro : Libros
     {
         public string Nombre { get; set; }
         public int NoDeMiembro { get; set; }
         public List<Prestamo> HistoriaPrestamo { get; set; }
-        public Miembro(string Nombre, int NoDeMiembro,)
+        public Miembro(string Nombre, int NoDeMiembro,) 
+
         {
-            this.Nombre  = Nombre;
+            this.Nombre = Nombre;
             this.NoDeMiembro = NoDeMiembro;
             this.HistoriaPrestamo = new List<Prestamo>();
         }
-        public void Historial ()
-        {
-            Console.WriteLine($"Historial de prestamos de {Nombre}:");
-            foreach ( var prestamo in HistoriaPrestamo )
+
+            public void Historial()
             {
-                prestamo.MostrarInformacion();
+                Console.WriteLine($"Historial de prestamos de {Nombre}:");
+                foreach (var prestamo in HistoriaPrestamo)
+                {
+                    prestamo.MostrarInformacion();
+                }
             }
         }
-    }
-    
+
 }
-    

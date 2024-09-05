@@ -1,4 +1,4 @@
-namespace TareaHerencia
+    namespace TareaHerencia
 {
     public partial class Form1 : Form
     {

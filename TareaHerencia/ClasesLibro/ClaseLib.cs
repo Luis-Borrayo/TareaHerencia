@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TareaHerencia.ClasesLibro
 {
-    internal class Libro
+    internal class Libro : Libros
     {
         public string Titulo { get; set; }
         public string Autor { get; set; }
@@ -22,7 +22,7 @@ namespace TareaHerencia.ClasesLibro
         }
         public virtual void MostrarInformacion()
         {
-            Console.WriteLine($"Título: {Titulo}, Autor: {Autor}, Año de publicación: {AnioPublicacion}, Categoría: {Categoria}");
+            Console.WriteLine($"Título: {Titulo}, Autor: {Autor}, Año de publicación: {AñoPublicacion}, Categoría: {Categoria}");
         }
 
     }
