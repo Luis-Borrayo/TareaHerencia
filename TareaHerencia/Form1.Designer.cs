@@ -40,7 +40,6 @@
             ClaseMiembros.TabIndex = 0;
             ClaseMiembros.Text = "ClaseMiembros";
             ClaseMiembros.UseVisualStyleBackColor = true;
-            ClaseMiembros.Click += ClaseMiembros_Click;
             // 
             // listBox1
             // 
